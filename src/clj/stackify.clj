@@ -2,7 +2,8 @@
   (:require [clojure.tools.cli :refer [parse-opts]]
             [clj.configuration :as config]
             [clj.core :as core]
-            [clj.classificator :as classificator])
+            [clj.classificator :as classificator]
+            [clj.mongo :as mongo])
   (:gen-class))
 
 (def cli-options
@@ -16,5 +17,5 @@
       "init" (config/init)
       "get" ( ->> (core/get-questions)
                   (classificator/classify)
-                  (println)))
+                  (mongo/insert-questions)))
     ))

@@ -4,7 +4,7 @@
             [clojure.data.json :as json]
             [clj.utils :as utils]
             [clj.configuration :as config]
-            [clj.classificator :as classificator]))
+            [clj.classificator]))
 
 ; TODO: move key to environment variables
 (def ^:const stackKey "fynFeDpzL1maIki1j1eLQw((")

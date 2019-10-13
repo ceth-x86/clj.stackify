@@ -7,7 +7,8 @@
                  [org.clojure/tools.cli "0.4.2"]
                  [clj-time "0.15.0"]
                  [org.clojure/data.json "0.2.6"]
-                 [clj-http "3.10.0"]]
+                 [clj-http "3.10.0"]
+                 [com.novemberain/monger "3.1.0"]]
   :main ^:skip-aot clj.stackify
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})

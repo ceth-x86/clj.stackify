@@ -10,7 +10,9 @@ Download from http://example.com/FIXME.
 
 FIXME: explanation
 
-    $ java -jar clj.stackify-0.1.0-standalone.jar [args]
+    $ lein uberjar
+    $ java -jar clj.stackify-0.1.0-standalone.jar init
+    $ java -jar clj.stackify-0.1.0-standalone.jar get
 
 ## Options
 
